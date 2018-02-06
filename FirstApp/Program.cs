@@ -14,6 +14,26 @@ namespace FirstApp
         static void Main(string[] args)
         {
             WriteLine("Hello, World!");
+            Squarer d = CalcX4;
+            Console.WriteLine("Some operations will be executed... Please stand by");
+            d += CalcSqrt;
+            d(15);
+        }
+
+        static int CalcX2(int x) => 2 * x;
+
+        static int CalcX4(int x)
+        {
+            var result = CalcX2(CalcX2(x));
+            WriteLine($"calculating... {x} * {x} = {result}");
+            return result;
+        }
+
+        static int CalcSqrt(int x)
+        {
+            var result = Convert.ToInt32(Math.Sqrt(x));
+            WriteLine($"calculating... Sqrt ({x}) = {result}");
+            return result;
         }
     }
 }
