@@ -13,7 +13,7 @@ namespace FirstApp
 
         public String NextMessage()
         {
-            return (Random.Next() % 2 == 0) ? "Good!" : "Bad!";
+            return (Random.Next() % 2 == 0) ? "Very Good!" : "Very Bad!";
         }     
 
     }
