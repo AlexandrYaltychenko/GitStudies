@@ -14,14 +14,16 @@ namespace FirstApp
         static void Main(string[] args)
         {
             WriteLine("Hello, World!");
-            Squarer d = CalcSqr;
+            Squarer d = CalcX4;
             d += CalcSqrt;
             d(15);
         }
 
-        static int CalcSqr(int x)
+        static int CalcX2(int x) => 2 * x;
+
+        static int CalcX4(int x)
         {
-            var result = x * x;
+            var result = CalcX2(CalcX2(x));
             WriteLine($"calculating... {x} * {x} = {result}");
             return result;
         }
