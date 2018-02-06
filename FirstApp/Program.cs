@@ -15,6 +15,7 @@ namespace FirstApp
         {
             WriteLine("Hello, World!");
             Squarer d = CalcX4;
+            Console.WriteLine("Some operations will be executed... Please stand by");
             d += CalcSqrt;
             d(15);
         }
