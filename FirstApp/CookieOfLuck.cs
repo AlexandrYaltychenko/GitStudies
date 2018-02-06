@@ -10,11 +10,10 @@ namespace FirstApp
     class CookieOfLuck
     {
         private Random Random = new Random();
-        private List<String> MessageStore = new List<String>() { "You will be lucky!", "You will fail!", "Everything will be fine", "Something wrong will take place"};
 
         public String NextMessage()
         {
-            return MessageStore[Random.Next() % MessageStore.Count];
+            return (Random.Next() % 2 == 0) ? "Good!" : "Bad!";
         }     
 
     }
