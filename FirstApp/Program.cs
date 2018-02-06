@@ -14,23 +14,6 @@ namespace FirstApp
         static void Main(string[] args)
         {
             WriteLine("Hello, World!");
-            Squarer d = CalcSqr;
-            d += CalcSqrt;
-            d(15);
-        }
-
-        static int CalcSqr(int x)
-        {
-            var result = x * x;
-            WriteLine($"calculating... {x} * {x} = {result}");
-            return result;
-        }
-
-        static int CalcSqrt(int x)
-        {
-            var result = Convert.ToInt32(Math.Sqrt(x));
-            WriteLine($"calculating... Sqrt ({x}) = {result}");
-            return result;
         }
     }
 }
