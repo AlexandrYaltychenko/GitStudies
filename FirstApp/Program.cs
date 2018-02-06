@@ -18,7 +18,7 @@ namespace FirstApp
             d += CalcSqrt;
             d(15);
             var cookie = new CookieOfLuck();
-            Console.WriteLine($"This is your prediction for today: \"{cookie.NextMessage()}\"");
+            Console.WriteLine($"Please read the prediction for today: \"{cookie.NextMessage()}\"");
         }
 
         static int CalcSqr(int x)
